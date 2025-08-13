@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women in AI - Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b2e6a3d5-486e-42d4-95af-560c46b62d30.png" alt="Women in AI Initiative logo in purple and white" />
+        </div>
+        <h1>Women in AI Initiative</h1>
+        <p class="subtitle">Join our global network of women shaping the future of artificial intelligence</p>
+    </header>
+
+    <div class="container">
+        <section class="form-intro">
+            <h2>Become a Member</h2>
+            <p>Fill out this form to join our growing community of women professionals, researchers, and students in the field of artificial intelligence.</p>
+        </section>
+
+        <form id="registrationForm" class="registration-form">
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="firstName" class="required-field">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="lastName" class="required-field">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="required-field">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">Select your country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                    <!-- More countries would be added here -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="occupation">Current Occupation</label>
+                <select id="occupation" name="occupation">
+                    <option value="">Select your occupation</option>
+                    <option value="student">Student</option>
+                    <option value="researcher">Researcher</option>
+                    <option value="developer">AI Developer</option>
+                    <option value="engineer">AI Engineer</option>
+                    <option value="manager">AI Manager</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="organization">Organization/Institution</label>
+                <input type="text" id="organization" name="organization">
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/your-profile">
+            </div>
+
+            <div class="form-group">
+                <label>Areas of Interest (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="interest-ml" name="interest" value="machine-learning">
+                        <label for="interest-ml">Machine Learning</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="interest-dl" name="interest" value="deep-learning">
+                        <label for="interest-dl">Deep Learning</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="interest-nlp" name="interest" value="nlp">
+                        <label for="interest-nlp">Natural Language Processing</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="interest-cv" name="interest" value="computer-vision">
+                        <label for="interest-cv">Computer Vision</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="interest-ethics" name="interest" value="ai-ethics">
+                        <label for="interest-ethics">AI Ethics</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Years of Experience in AI</label>
+                <select id="experience" name="experience">
+                    <option value="">Select your experience level</option>
+                    <option value="0-2">0-2 years</option>
+                    <option value="3-5">3-5 years</option>
+                    <option value="6-10">6-10 years</option>
+                    <option value="10+">10+ years</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="motivation" class="required-field">Why do you want to join our Women in AI network?</label>
+                <textarea id="motivation" name="motivation" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Would you like to receive our monthly newsletter?</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="newsletter-yes" name="newsletter" value="yes" checked>
+                        <label for="newsletter-yes">Yes</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="newsletter-no" name="newsletter" value="no">
+                        <label for="newsletter-no">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+
+        <div id="successMessage" class="success-message">
+            <div class="success-icon">✓</div>
+            <h2>Thank You for Registering!</h2>
+            <p>Your application to join the Women in AI network has been received. We'll review your information and get back to you shortly.</p>
+            <p>In the meantime, check your email for a confirmation message.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Our Initiatives</a>
+            <a href="#">Events</a>
+            <a href="#">Resources</a>
+            <a href="#">Contact</a>
+        </div>
+        <p class="copyright">© 2024 AI Global Networks - Women in AI Initiative. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
